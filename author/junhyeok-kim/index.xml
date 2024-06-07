@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Junhyeok Kim | MICV</title>
+    <link>http://localhost:1313/author/junhyeok-kim/</link>
+      <atom:link href="http://localhost:1313/author/junhyeok-kim/index.xml" rel="self" type="application/rss+xml" />
+    <description>Junhyeok Kim</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_512x512_fill_lanczos_center_3.png</url>
+      <title>Junhyeok Kim</title>
+      <link>http://localhost:1313/author/junhyeok-kim/</link>
+    </image>
+    
+    <item>
+      <title>WoLF: Large Language Model Framework for CXR Understanding</title>
+      <link>http://localhost:1313/publication/2024-arxiv-wolf/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024-arxiv-wolf/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

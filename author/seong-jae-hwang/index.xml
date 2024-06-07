@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seong Jae Hwang | MICV</title>
+    <link>http://localhost:1313/author/seong-jae-hwang/</link>
+      <atom:link href="http://localhost:1313/author/seong-jae-hwang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Seong Jae Hwang</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+  </channel>
+</rss>
+1 May 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_512x512_fill_lanczos_center_3.png</url>
+      <title>Seong Jae Hwang</title>
+      <link>http://localhost:1313/author/seong-jae-hwang/</link>
+    </image>
+    
+    <item>
+      <title>Advancing Text-Driven Chest X-Ray Generation with Policy-Based Reinforcement Learning</title>
+      <link>http://localhost:1313/publication/2024-miccai-cxrl/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024-miccai-cxrl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slice-Consistent 3D Volumetric Brain CT-to-MRI Translation with 2D Brownian Bridge Diffusion Model</title>
+      <link>http://localhost:1313/publication/2024-miccai-ct2mri/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024-miccai-ct2mri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WoLF: Large Language Model Framework for CXR Understanding</title>
+      <link>http://localhost:1313/publication/2024-arxiv-wolf/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024-arxiv-wolf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EAGLE: Eigen Aggregation Learning for Object-Centric Unsupervised Semantic Segmentation</title>
+      <link>http://localhost:1313/publication/2024-cvpr-eagle/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024-cvpr-eagle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seong Jae Hwang</title>
+      <link>http://localhost:1313/author/seong-jae-hwang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/author/seong-jae-hwang/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Assistant Professor&lt;/strong&gt;&lt;br&gt;
+Department of Artificial Intelligence&lt;br&gt;
+Yonsei University&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:seongjae@yonsei.ac.kr&#34;&gt;seongjae@yonsei.ac.kr&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Phone:&lt;/strong&gt; 02-2123-5719&lt;br&gt;
+&lt;strong&gt;Location:&lt;/strong&gt; Engineering Research Park (공학원)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1cFmcET5gTGVHYW7OgYXjcRI2cDMOfyaO/view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cv [2024.1]&lt;/a&gt; / &lt;a href=&#34;https://scholar.google.com/citations?user=d4WCQbUAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;google scholar&lt;/a&gt; / &lt;a href=&#34;https://orcid.org/0000-0002-3713-5553&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;orcid&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

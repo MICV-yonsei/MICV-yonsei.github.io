@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | MICV</title>
+    <link>http://localhost:1313/publication/</link>
+      <atom:link href="http://localhost:1313/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_512x512_fill_lanczos_center_3.png</url>
+      <title>Publications</title>
+      <link>http://localhost:1313/publication/</link>
+    </image>
+    
+    <item>
+      <title>Advancing Text-Driven Chest X-Ray Generation with Policy-Based Reinforcement Learning</title>
+      <link>http://localhost:1313/publication/2024-miccai-cxrl/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024-miccai-cxrl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slice-Consistent 3D Volumetric Brain CT-to-MRI Translation with 2D Brownian Bridge Diffusion Model</title>
+      <link>http://localhost:1313/publication/2024-miccai-ct2mri/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024-miccai-ct2mri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WoLF: Large Language Model Framework for CXR Understanding</title>
+      <link>http://localhost:1313/publication/2024-arxiv-wolf/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024-arxiv-wolf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EAGLE: Eigen Aggregation Learning for Object-Centric Unsupervised Semantic Segmentation</title>
+      <link>http://localhost:1313/publication/2024-cvpr-eagle/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024-cvpr-eagle/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

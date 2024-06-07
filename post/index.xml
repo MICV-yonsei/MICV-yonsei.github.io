@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | MICV</title>
+    <link>http://localhost:1313/post/</link>
+      <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>http://localhost:1313/post/</link>
+    </image>
+    
+    <item>
+      <title>Two papers early-accepted for MICCAI 2024</title>
+      <link>http://localhost:1313/post/2024-05-01-two-papers-early-accepted-for-miccai-2024/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024-05-01-two-papers-early-accepted-for-miccai-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Funding : 우수신진연구</title>
+      <link>http://localhost:1313/post/2024-04-03-funding-%EC%9A%B0%EC%88%98%EC%8B%A0%EC%A7%84%EC%97%B0%EA%B5%AC/</link>
+      <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024-04-03-funding-%EC%9A%B0%EC%88%98%EC%8B%A0%EC%A7%84%EC%97%B0%EA%B5%AC/</guid>
+      <description>&lt;p&gt;NeuroGPT: 치매 진단보조를 위한 뇌영상 및 전자의무기록 중심 멀티모달 대화형 생성모델 개발&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Funding - LG전자 &amp; LG Display</title>
+      <link>http://localhost:1313/post/2024-04-02-funding-lg%EC%A0%84%EC%9E%90--lg-display/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024-04-02-funding-lg%EC%A0%84%EC%9E%90--lg-display/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Received 2023 Distinguished Faculty Award - Teaching</title>
+      <link>http://localhost:1313/post/2024-04-01-received-2023-distinguished-faculty-award-teaching/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024-04-01-received-2023-distinguished-faculty-award-teaching/</guid>
+      <description>&lt;p&gt;2023 우수업적교수상: 교육부문&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Funding - 서울혁신챌린지(본선)</title>
+      <link>http://localhost:1313/post/2024-03-01-funding-%EC%84%9C%EC%9A%B8%ED%98%81%EC%8B%A0%EC%B1%8C%EB%A6%B0%EC%A7%80%EB%B3%B8%EC%84%A0/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024-03-01-funding-%EC%84%9C%EC%9A%B8%ED%98%81%EC%8B%A0%EC%B1%8C%EB%A6%B0%EC%A7%80%EB%B3%B8%EC%84%A0/</guid>
+      <description>&lt;p&gt;인공지능 기반의 안드로겐 탈모 진단 시스템 연구개발&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>EAGLE accepted to CVPR&#39;24 as a Highlight paper Congrats to co-authors Chanyoung Kim, Woojung Han, and Dayun Ju!</title>
+      <link>http://localhost:1313/post/2024-02-01-cvpr24-our-work-eagle/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024-02-01-cvpr24-our-work-eagle/</guid>
+      <description>&lt;p&gt;Eigen Aggregation Learning for Object-Centric Unsupervised Semantic Segmentation accepted to CVPR&#39;24 as a Highlight paper. Congrats to co-authors Chanyoung Kim, Woojung Han, and Dayun Ju!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yeongjun Jun, Sujung Hong, Junhyeok Kim, Jiwoo Park, and Suhyun Kim join our lab</title>
+      <link>http://localhost:1313/post/2024-01-01-yeongjun-jun-sujung-hong-junhyeok-kim-jiwoo-park-and-suhyun-kim-join-our-lab/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024-01-01-yeongjun-jun-sujung-hong-junhyeok-kim-jiwoo-park-and-suhyun-kim-join-our-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Funding - 서울혁신챌린지(예선)</title>
+      <link>http://localhost:1313/post/2023-08-02-funding-%EC%84%9C%EC%9A%B8%ED%98%81%EC%8B%A0%EC%B1%8C%EB%A6%B0%EC%A7%80%EC%98%88%EC%84%A0/</link>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-08-02-funding-%EC%84%9C%EC%9A%B8%ED%98%81%EC%8B%A0%EC%B1%8C%EB%A6%B0%EC%A7%80%EC%98%88%EC%84%A0/</guid>
+      <description>&lt;p&gt;인공지능 기반의 안드로겐 탈모 진단 시스템 연구개발&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accepted to Medical Image Analysis</title>
+      <link>http://localhost:1313/post/2023-08-01-accepted-to-medical-image-analysis/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-08-01-accepted-to-medical-image-analysis/</guid>
+      <description>&lt;p&gt;Congrats to Mahbaneh!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Funding - 한국연구재단 / 기초연구실</title>
+      <link>http://localhost:1313/post/2023-07-02-funding-%ED%95%9C%EA%B5%AD%EC%97%B0%EA%B5%AC%EC%9E%AC%EB%8B%A8---%EA%B8%B0%EC%B4%88%EC%97%B0%EA%B5%AC%EC%8B%A4/</link>
+      <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-07-02-funding-%ED%95%9C%EA%B5%AD%EC%97%B0%EA%B5%AC%EC%9E%AC%EB%8B%A8---%EA%B8%B0%EC%B4%88%EC%97%B0%EA%B5%AC%EC%8B%A4/</guid>
+      <description>&lt;p&gt;CT 영상 화질개선을 위한 인공지능 연구실&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Funding - 한국연구재단/데이터 기반 디지털 바이오 선도사업</title>
+      <link>http://localhost:1313/post/2023-07-01-funding-%ED%95%9C%EA%B5%AD%EC%97%B0%EA%B5%AC%EC%9E%AC%EB%8B%A8-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B8%B0%EB%B0%98-%EB%94%94%EC%A7%80%ED%84%B8-%EB%B0%94%EC%9D%B4%EC%98%A4-%EC%84%A0%EB%8F%84%EC%82%AC%EC%97%85/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-07-01-funding-%ED%95%9C%EA%B5%AD%EC%97%B0%EA%B5%AC%EC%9E%AC%EB%8B%A8-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B8%B0%EB%B0%98-%EB%94%94%EC%A7%80%ED%84%B8-%EB%B0%94%EC%9D%B4%EC%98%A4-%EC%84%A0%EB%8F%84%EC%82%AC%EC%97%85/</guid>
+      <description>&lt;p&gt;바이오 빅데이터 기반 당뇨병 및 합병증 정밀 의료를 위한 AI 플랫폼 및 모델 개발&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dayun Ju and Chanyoung Kim join our lab</title>
+      <link>http://localhost:1313/post/2023-03-01-dayun-ju-and-chanyoung-kim-join-our-lab/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-03-01-dayun-ju-and-chanyoung-kim-join-our-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accepted for Machine Learning on theoretical domain generalization</title>
+      <link>http://localhost:1313/post/2023-02-01-accepted-for-machine-learning-on-theoretical-domain-generalization/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-02-01-accepted-for-machine-learning-on-theoretical-domain-generalization/</guid>
+      <description>&lt;p&gt;Congrats to Anthony!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gayoon Choi, Taejin Jeong, and Jeahoon Joo join our lab</title>
+      <link>http://localhost:1313/post/2023-01-02-gayoon-choi-taejin-jeong-and-jeahoon-joo-join-our-lab/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-01-02-gayoon-choi-taejin-jeong-and-jeahoon-joo-join-our-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accepted for ISBI 2023</title>
+      <link>http://localhost:1313/post/2023-01-01-accepted-for-isbi-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-01-01-accepted-for-isbi-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Our paper won the Best Paper Award at UAI 2022</title>
+      <link>http://localhost:1313/post/2022-08-01-our-paper-won-the-best-paper-award-at-uai-2022/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2022-08-01-our-paper-won-the-best-paper-award-at-uai-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yumin Kim, Seil Kang, Kyobin Choo, Hyunjin Kim, and Donghyun Kim join our lab</title>
+      <link>http://localhost:1313/post/2022-07-01-yumin-kim-seil-kang-kyobin-choo-hyunjin-kim-and-donghyun-kim-join-our-lab/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2022-07-01-yumin-kim-seil-kang-kyobin-choo-hyunjin-kim-and-donghyun-kim-join-our-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accepted for UAI 2022, Eindhoven, the Netherlands for an Oral Presentation</title>
+      <link>http://localhost:1313/post/2022-05-01-accepted-for-uai-2022-eindhoven-the-netherlands-for-an-oral-presentation/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2022-05-01-accepted-for-uai-2022-eindhoven-the-netherlands-for-an-oral-presentation/</guid>
+      <description>&lt;p&gt;Congrats to Anthony!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accepted for IJCAI 2022, Vienna</title>
+      <link>http://localhost:1313/post/2022-04-01-accepted-for-ijcai-2022-vienna/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2022-04-01-accepted-for-ijcai-2022-vienna/</guid>
+      <description>&lt;p&gt;Congrats to Xingchen and Anthony!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Joining as an Assistant Professor in the Department of Artificial Intelligence at Yonsei University</title>
+      <link>http://localhost:1313/post/2022-03-01-joining-as-an-assistant-professor-in-the-department-of-artificial-intelligence-at-yonsei-university/</link>
+      <pubDate>Sun, 13 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2022-03-01-joining-as-an-assistant-professor-in-the-department-of-artificial-intelligence-at-yonsei-university/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yujin Yang and Woojung Han join our lab</title>
+      <link>http://localhost:1313/post/2022-03-03-yujin-yang-and-woojung-han-join-our-lab/</link>
+      <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2022-03-03-yujin-yang-and-woojung-han-join-our-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accepted for Findings of ACL 2022</title>
+      <link>http://localhost:1313/post/2022-03-02-accepted-for-findings-of-acl-2022/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2022-03-02-accepted-for-findings-of-acl-2022/</guid>
+      <description>&lt;p&gt;Congrats to Anthony!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accepted for NeuroImage</title>
+      <link>http://localhost:1313/post/2021-10-08-accepted-for-neuroimage/</link>
+      <pubDate>Fri, 08 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2021-10-08-accepted-for-neuroimage/</guid>
+      <description>&lt;p&gt;Congrats to Mahbaneh!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accepted for The First Workshop on Computer Vision for Automated Medical Diagnosis @ ICCV 2021</title>
+      <link>http://localhost:1313/post/2021-08-14-accepted-for-the-first-workshop-on-computer-vision-for-automated-medical-diagnosis-@-iccv-2021/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2021-08-14-accepted-for-the-first-workshop-on-computer-vision-for-automated-medical-diagnosis-@-iccv-2021/</guid>
+      <description>&lt;p&gt;Congrats to Mahbaneh!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accepted for MICCAI 2021, Virtual</title>
+      <link>http://localhost:1313/post/2021-06-07-accepted-for-miccai-2021-virtual/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2021-06-07-accepted-for-miccai-2021-virtual/</guid>
+      <description>&lt;p&gt;Congrats to Anthony!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accepted for MIDL 2021, Virtual</title>
+      <link>http://localhost:1313/post/2021-05-16-accepted-for-midl-2021-virtual/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2021-05-16-accepted-for-midl-2021-virtual/</guid>
+      <description>&lt;p&gt;Congrats to Shibo!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accepted for AAIC 2021, Denver, USA</title>
+      <link>http://localhost:1313/post/2021-03-11-accepted-for-aaic-2021-denver-usa/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2021-03-11-accepted-for-aaic-2021-denver-usa/</guid>
+      <description>&lt;p&gt;Congrats to Mahbaneh!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Two Full Papers Accepted for ISBI 2021, Virtual</title>
+      <link>http://localhost:1313/post/2021-02-27-two-full-papers-accepted-for-isbi-2021-virtual/</link>
+      <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2021-02-27-two-full-papers-accepted-for-isbi-2021-virtual/</guid>
+      <description>&lt;p&gt;Congrats to Anthony and Xingchen!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accepted for IPMI 2021, Virtual</title>
+      <link>http://localhost:1313/post/2021-02-10-accepted-for-ipmi-2021-virtual/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2021-02-10-accepted-for-ipmi-2021-virtual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Received Alzheimer&#39;s Disease Research Center Developmental Project grant by Pitt ADRC for 2021-2022</title>
+      <link>http://localhost:1313/post/2020-12-16-received-alzheimers-disease-research-center-developmental-project-grant-by-pitt-adrc-for-2021-2022/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-12-16-received-alzheimers-disease-research-center-developmental-project-grant-by-pitt-adrc-for-2021-2022/</guid>
+      <description>&lt;p&gt;A bias-resilient deep learning algorithm for robust white matter hyperintensity segmentation on Alzheimer’s disease data with confounding factors&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bye</title>
+      <link>http://localhost:1313/post/20-12-02-icml-best-paper/</link>
+      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/20-12-02-icml-best-paper/</guid>
+      <description>&lt;p&gt;Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2020 Conference on Wowchemy for their paper “Learning Wowchemy”.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>http://localhost:1313/post/20-12-01-wowchemy-prize/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/20-12-01-wowchemy-prize/</guid>
+      <description>&lt;p&gt;Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.&lt;/p&gt;
+&lt;p&gt;Explain&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accepted for The Anatomical Record</title>
+      <link>http://localhost:1313/post/2020-10-23-accepted-for-the-anatomical-record/</link>
+      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-10-23-accepted-for-the-anatomical-record/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accepted for an Oral Presentation at The Workshop on BioImage Computing @ ECCV 2020</title>
+      <link>http://localhost:1313/post/2020-07-02-accepted-for-an-oral-presentation-at-the-workshop-on-bioimage-computing-@-eccv-2020/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-07-02-accepted-for-an-oral-presentation-at-the-workshop-on-bioimage-computing-@-eccv-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xingchen Zhao received the SCI Undergraduate Research Scholars award for Summer 2020</title>
+      <link>http://localhost:1313/post/2020-04-22-xingchen-zhao-received-the-sci-undergraduate-research-scholars-award-for-summer-2020/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-04-22-xingchen-zhao-received-the-sci-undergraduate-research-scholars-award-for-summer-2020/</guid>
+      <description>&lt;p&gt;Congratulations!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accepted for ISBI 2020, Iowa City, USA</title>
+      <link>http://localhost:1313/post/2020-01-03-accepted-for-isbi-2020-iowa-city-usa/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-01-03-accepted-for-isbi-2020-iowa-city-usa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joining as an Assistant Professor in the Department of Computer Science at the University of Pittsburgh</title>
+      <link>http://localhost:1313/post/2019-10-19-joining-as-an-assistant-professor-in-the-department-of-computer-science-at-the-university-of-pittsburgh/</link>
+      <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-10-19-joining-as-an-assistant-professor-in-the-department-of-computer-science-at-the-university-of-pittsburgh/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
