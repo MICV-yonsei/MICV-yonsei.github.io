@@ -10007,16 +10007,18 @@ ul.ul-jour-rev-experience li .description p {
 /*************************************************
 *  Transition Loading Components
 **************************************************/
-.fade {
+/* 초기 상태: 불투명도 0 */
+body {
+    opacity: 0;
     transition: opacity 0.15s linear;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .fade {
+    body {
         transition: none;
     }
 }
 
-.fade:not(.show) {
-    opacity: 0;
+body.show {
+    opacity: 1;
 }
