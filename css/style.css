@@ -64,3 +64,9 @@
   max-width: 100%;
   height: auto;
 } */
+
+
+.next-btn {
+    margin-top: 3rem !important;
+    margin-left: 5rem !important;
+}
