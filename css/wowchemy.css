@@ -969,6 +969,13 @@ pre {
   .col-lg-8 {
     flex: 0 0 86.66666667%;
     max-width: 86.66666667%; }
+
+  /**/
+  .members-info {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%; }
+  /**/
+  
   .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%; }
