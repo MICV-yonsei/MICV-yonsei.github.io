@@ -574,6 +574,32 @@ pre {
   flex: 0 0 91.66666667%;
   max-width: 91.66666667%; }
 
+
+.centered-block {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem 10rem 1rem 10rem;
+}
+
+@media (max-width: 1199px) {
+    .centered-block {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .centered-block {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 767px) {
+    .centered-block {
+        max-width: 90%;
+    }
+}
+
+
 .col-12 {
   flex: 0 0 100%;
   max-width: 100%; }
