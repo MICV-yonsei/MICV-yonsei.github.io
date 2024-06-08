@@ -9489,11 +9489,11 @@ a.hero-cta-alt:hover {
 
 @media (min-width: 576px) {
   .people-widget .col-sm-auto {
-    width: 30%; } }
+    width: 15%; } }
 
 @media (min-width: 992px) {
   .people-widget .col-sm-auto {
-    width: 20%; } }
+    width: 15%; } }
 
 /*************************************************
  *  Projects
