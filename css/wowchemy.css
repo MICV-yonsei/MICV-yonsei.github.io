@@ -10010,7 +10010,7 @@ ul.ul-jour-rev-experience li .description p {
 /* 초기 상태: 불투명도 0 */
 body {
     opacity: 0;
-    transition: opacity 0.15s linear;
+    transition: opacity 0.20s linear;
 }
 
 @media (prefers-reduced-motion: reduce) {
