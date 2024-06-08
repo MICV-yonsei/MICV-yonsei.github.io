@@ -10003,3 +10003,20 @@ ul.ul-jour-rev-experience li .description p.journal {
 
 ul.ul-jour-rev-experience li .description p {
   margin: 0; }
+
+/*************************************************
+*  Transition Loading Components
+**************************************************/
+.fade {
+    transition: opacity 0.15s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fade {
+        transition: none;
+    }
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
