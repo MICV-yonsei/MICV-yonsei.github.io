@@ -1,3 +1,7 @@
+window.addEventListener("load", function () {
+	document.body.classList.add("show");
+});
+
 var a = {},
 	s,
 	r,
@@ -78,9 +82,4 @@ document.addEventListener("DOMContentLoaded", function () {
 					console.error("Citation copy failed!");
 				});
 		});
-});
-
-// 페이지가 로드되면 show 클래스를 body 요소에 추가
-window.addEventListener('load', function() {
-    document.body.classList.add('show');
 });
