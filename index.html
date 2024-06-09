@@ -111,6 +111,7 @@
     </header>
   </div>
   <div class="page-body"><span class="js-widget-page d-none"></span>
+    <!-- 수정된 섹션 -->
     <section id="section-hero" class="home-section wg-hero ">
       <div class="home-section-bg "></div>
       <div class="container">
@@ -121,10 +122,23 @@
               <p>Medical Imaging and Computer Vision</p>
             </div>
           </div>
-          <div class="col-12 mx-auto col-md-6 hero-media"><img
-                 src="/media/welcome_hu67c71d53944a7e77717797504bf75103_13396313_400x0_resize_lanczos_3.png"
-                 srcset="/media/welcome_hu67c71d53944a7e77717797504bf75103_13396313_1200x0_resize_lanczos_3.png 1200w,/media/welcome_hu67c71d53944a7e77717797504bf75103_13396313_800x0_resize_lanczos_3.png 800w,/media/welcome_hu67c71d53944a7e77717797504bf75103_13396313_400x0_resize_lanczos_3.png 400w"
-                 width="3872" height="2176" alt=""></div>
+          <div class="col-12 mx-auto col-md-6 hero-media">
+            <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
+              <div class="carousel-inner" id="carousel-images">
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <li class="carousel-indicators" id="carousel-indicators">
+                <!-- 목차 인디케이터가 여기에 동적으로 추가됩니다 -->
+              </li>
+            </div>
+          </div>
         </div>
       </div>
     </section>

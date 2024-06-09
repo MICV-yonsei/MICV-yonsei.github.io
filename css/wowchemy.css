@@ -10022,3 +10022,108 @@ body {
 body.show {
     opacity: 1;
 }
+
+/*************************************************
+*  style.css
+**************************************************/
+
+/*post button*/
+.next-btn {
+  margin-top: 3rem !important;
+  margin-left: 5rem !important;
+}
+
+/*main hero image slider*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+/* Modify these styles in your style.css */
+/* Modify these styles in your style.css */
+/* 기본 스타일 */
+/* 기본 스타일 */
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px; /* 기본 위치 */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0; /* Ensure no margin */
+  list-style: none;
+  z-index: 15; /* Ensure indicators are above the image */
+}
+
+.carousel-indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 0.8rem; /* 기본 크기 */
+  height: 0.8rem; /* 기본 크기 */
+  margin: 0 0.25rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+  background-clip: padding-box;
+  border: 1px solid #fff; /* White border for better contrast */
+  opacity: .7;
+  transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #fff; /* Fully opaque background for the active indicator */
+}
+
+/* 반응형 미디어 쿼리 */
+@media (max-width: 1200px) {
+  .carousel-indicators {
+    bottom: 15px; /* Adjust as needed for smaller screens */
+  }
+
+  .carousel-indicators li {
+    width: 0.6rem; /* Ensure width and height are equal */
+    height: 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-indicators {
+    bottom: 10px; /* Adjust as needed for smaller screens */
+  }
+
+  .carousel-indicators li {
+    width: 0.4rem; /* Ensure width and height are equal */
+    height: 0.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-indicators {
+    bottom: 5px; /* Adjust as needed for smaller screens */
+  }
+
+  .carousel-indicators li {
+    width: 0.2rem; /* Ensure width and height are equal */
+    height: 0.2rem;
+  }
+}
