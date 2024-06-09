@@ -5,74 +5,91 @@ window.addEventListener("load", function () {
 
 // welcome image slider
 document.addEventListener("DOMContentLoaded", function () {
-	var imageFolder = "media/welcome/";
-	var imageExtensions = ["jpg", "jpeg", "png", "gif"];
-	var targetWidth = 1600; // 기본 목표 너비
-	var targetHeight = 1200; // 기본 목표 높이
+	const imageFolder = "media/welcome/"; // 이미지 폴더 경로
+	const targetWidth = 1600; // 기본 목표 너비
+	const targetHeight = 1200; // 기본 목표 높이
 
-	// 이미지 파일 목록을 가져와서 캐러셀에 추가
-	var images = [];
-	var carouselInner = document.getElementById("carousel-images");
-	var carouselIndicators = document.getElementById("carousel-indicators");
+	const carouselInner = document.getElementById("carousel-images");
+	const carouselIndicators = document.getElementById("carousel-indicators");
 
-	function loadImages() {
-		var imagePaths = [];
+	function fetchAndSortImages() {
+		return fetch("media/welcome/images.json")
+			.then((response) => response.json())
+			.then((files) => {
+				return files.sort((a, b) => a.order - b.order); // order 키를 기준으로 오름차순 정렬
+			})
+			.catch((error) => {
+				console.error("Error fetching and sorting images:", error);
+				return [];
+			});
+	}
 
-		imageExtensions.forEach(function (extension) {
-			for (var i = 1; i <= 10; i++) {
-				// 1~10번 이미지 파일을 시도
-				var imagePath = imageFolder + "welcome" + i + "." + extension;
-				imagePaths.push(imagePath);
-			}
+	function preloadImages(files, callback) {
+		let loadedCount = 0;
+		const images = [];
+
+		files.forEach((file, index) => {
+			const img = new Image();
+			img.src = `${imageFolder}${file.filename}`;
+			img.onload = () => {
+				const resizedImage = resizeImage(img, targetWidth, targetHeight);
+				images.push({ src: resizedImage, description: file.description, filename: file.filename });
+				loadedCount++;
+				if (loadedCount === files.length) {
+					callback(images);
+				}
+			};
+			img.onerror = () => {
+				console.error(`Error loading image: ${file.filename}`);
+				loadedCount++;
+				if (loadedCount === files.length) {
+					callback(images);
+				}
+			};
 		});
+	}
 
-		// 이미지 경로 정렬
-		imagePaths.sort();
+	function displayImages(images) {
+		// 기존 캐러셀 콘텐츠 초기화
+		carouselInner.innerHTML = "";
+		carouselIndicators.innerHTML = "";
 
-		imagePaths.forEach(function (imagePath, index) {
-			var img = new Image();
-			img.src = imagePath;
-			img.onload = function () {
-				var resizedImage = resizeImage(this, targetWidth, targetHeight);
-				images.push(resizedImage);
-				var activeClass = images.length === 1 ? "active" : "";
-				var carouselItem = `
-          <div class="carousel-item ${activeClass}">
-            <img src="${resizedImage}" class="d-block w-100" alt="" style="object-fit: cover;">
-          </div>
-        `;
-				var indicatorItem = `<li data-target="#heroCarousel" data-slide-to="${images.length - 1}" class="${activeClass}"></li>`;
-				carouselInner.innerHTML += carouselItem;
-				carouselIndicators.innerHTML += indicatorItem;
-			};
-			img.onerror = function () {
-				// 이미지가 존재하지 않으면 무시
-			};
+		images.forEach((image, idx) => {
+			const activeClass = idx === 0 ? "active" : "";
+			const carouselItem = `
+                <div class="carousel-item ${activeClass}">
+                    <img src="${image.src}" class="d-block w-100" alt="" style="object-fit: cover;">
+                    <div class="overlay">${image.description}</div>
+                </div>
+            `;
+			const indicatorItem = `<li data-target="#heroCarousel" data-slide-to="${idx}" class="${activeClass}"></li>`;
+			carouselInner.innerHTML += carouselItem;
+			carouselIndicators.innerHTML += indicatorItem;
 		});
 
 		// 이미지가 1개인 경우 캐러셀 비활성화
-		setTimeout(function () {
-			if (images.length <= 1) {
-				document.querySelector(".carousel-control-prev").style.display = "none";
-				document.querySelector(".carousel-control-next").style.display = "none";
-				$("#heroCarousel").carousel("pause");
-			} else {
-				// 슬라이딩 속도 조절 (슬라이드 속도는 1초)
-				$("#heroCarousel").on("slide.bs.carousel", function () {
-					$(".carousel-item").css("transition", "transform 1.0s ease");
-				});
-			}
-		}, 500); // 이미지 로드 후 0.5초 대기
+		if (images.length <= 1) {
+			document.querySelector(".carousel-control-prev").style.display = "none";
+			document.querySelector(".carousel-control-next").style.display = "none";
+			$("#heroCarousel").carousel("pause");
+		} else {
+			// 슬라이딩 속도 조절 (슬라이드 속도는 1초)
+			$("#heroCarousel").on("slide.bs.carousel", function () {
+				$(".carousel-item").css("transition", "transform 1.0s ease");
+			});
+		}
 	}
 
 	function resizeImage(img, width, height) {
-		var canvas = document.createElement("canvas");
+		const canvas = document.createElement("canvas");
 		canvas.width = width;
 		canvas.height = height;
-		var ctx = canvas.getContext("2d");
+		const ctx = canvas.getContext("2d");
 		ctx.drawImage(img, 0, 0, width, height);
 		return canvas.toDataURL("image/jpeg");
 	}
 
-	loadImages();
+	fetchAndSortImages().then((files) => {
+		preloadImages(files, displayImages);
+	});
 });
