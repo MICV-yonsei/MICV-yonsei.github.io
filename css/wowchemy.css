@@ -9532,9 +9532,9 @@ a.hero-cta-alt:hover {
   font-size: 0.7rem; }
 
 .people-widget .avatar {
-  width: 80%;
-  max-width: 150px;
-  height: auto; }
+  width: 7rem;
+  max-width: 7rem;
+  height: 7rem; }
 
 @media (min-width: 576px) {
   .people-widget .col-sm-auto {
