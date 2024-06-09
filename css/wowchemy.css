@@ -576,20 +576,34 @@ pre {
 
 
 .centered-block {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 1rem 10rem 1rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.centered-block ul {
+    text-align: left; /* ul 블록 내의 텍스트를 왼쪽 정렬 */
 }
 
 @media (max-width: 1199px) {
     .centered-block {
         max-width: 100px;
+        /* padding: 1rem 10rem 1rem 10rem; */
     }
 }
 
 @media (max-width: 991px) {
     .centered-block {
         max-width: 800px;
+        /* padding: 1rem 10rem 1rem 10rem; */
     }
 }
 
@@ -5752,7 +5766,7 @@ button.bg-dark:focus {
 
 .ml-5,
 .mx-5 {
-  margin-left: 3rem !important; }
+  margin-left: 1rem !important; }
 
 .p-0 {
   padding: 0 !important; }
