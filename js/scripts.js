@@ -6,8 +6,8 @@ window.addEventListener("load", function () {
 // welcome image slider
 document.addEventListener("DOMContentLoaded", function () {
 	const imageFolder = "media/welcome/"; // 이미지 폴더 경로
-	const targetWidth = 1600; // 기본 목표 너비
-	const targetHeight = 1200; // 기본 목표 높이
+	const targetWidth = 4800; // 기본 목표 너비
+	const targetHeight = 3000; // 기본 목표 높이
 
 	const carouselInner = document.getElementById("carousel-images");
 	const carouselIndicators = document.getElementById("carousel-indicators");
