@@ -9535,6 +9535,12 @@ a.hero-cta-alt:hover {
   width: 7rem;
   max-width: 7rem;
   height: 7rem; }
+ 
+.people-widget .people-interests {
+  margin-top: 0.5rem;  
+  margin-bottom: 2rem;  
+  line-height: 1.5;  
+}
 
 @media (min-width: 576px) {
   .people-widget .col-sm-auto {
