@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: June 8, 2024 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<meta name="description" content="&lt;!DOCTYPE html&gt; Slice-Consistent 3D Volumetric Brain CT-to-MRI Translation with 2D Brownian Bridge Diffusion Model @ MICCAI 2024 Kyobin Choo, Youngjun Jun, Mijin Yun, Seong Jae Hwang Yonsei University Paper arXiv Code" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/eagle2024/" />
+<link rel="canonical" href="http://localhost:1313/eagle2024/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="http://localhost:1313/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_512x512_fill_lanczos_center_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="MICV" />
+<meta property="og:url" content="http://localhost:1313/ct2mri2024/" />
+<meta property="og:title" content="MICV" />
+<meta property="og:description" content="&lt;!DOCTYPE html&gt; EAGLE EAGLE🦅: Eigen Aggregation Learning for Object-Centric Unsupervised Semantic Segmentation Highlight @ CVPR 2024 Chanyoung Kim*, Woojung Han*, Dayun Ju, Seong Jae Hwang Yonsei University Paper arXiv Code We introduce EAGLE, Eigen AGgregation LEarning for object-centric unsupervised semantic segmentation." /><meta property="og:image" content="http://localhost:1313/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>MICV</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+      
+      
+      
+    
+  
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="eeeb8f60f540691edb50ec50a184a95a" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">MICV</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">MICV</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#professor"><span>Professor</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#people"><span>Members</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#research-topics"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1></h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EAGLE</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">EAGLE🦅: Eigen Aggregation Learning for Object-Centric
+            Unsupervised Semantic Segmentation</h1>
+            
+
+            <div class="is-size-4 publication-authors">
+              <strong><span class="author-block">Highlight @ CVPR 2024</span></strong>
+            </div>
+            <div class="is-size-4 publication-authors">
+              <span class="author-block">
+                Chanyoung Kim<sup>*</sup>,</span>
+              <span class="author-block">
+                Woojung Han<sup>*</sup>,</span>
+              <span class="author-block">
+                Dayun Ju</a>,
+              </span>
+              <span class="author-block">
+                Seong Jae Hwang
+              </span>
+            </div>
+
+            <div class="is-size-4 publication-authors">
+              <span class="author-block">Yonsei University</span>
+            </div>
+
+        </div>
+
+        
+      </div>
+
+      <div class="column has-text-centered">
+        <div class="publication-links">
+          <!-- PDF Link. -->
+          <span class="link-block">
+            <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Kim_EAGLE_Eigen_Aggregation_Learning_for_Object-Centric_Unsupervised_Semantic_Segmentation_CVPR_2024_paper.html"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>Paper</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://arxiv.org/abs/2403.01482"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+          </span>
+          <!-- Code Link. -->
+          <span class="link-block">
+            <a href="https://github.com/MICV-yonsei/EAGLE"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+              </a>
+          </span>
+          
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="image-at-center">
+        <img src="./static/images/1st_b.png" alt="Visualizing EAGLE and Baselines" width="80%">
+      </div>
+      <br>
+      <h2 class="subtitle has-text-centered">
+        We introduce <b><i>EAGLE</i></b>,
+        <br><b>E</b>igen <b>AG</b>gregation <b>LE</b>arning for object-centric unsupervised semantic segmentation.
+
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          Semantic segmentation has innately relied on extensive pixel-level labeled annotated data, leading to the emergence of unsupervised methodologies. 
+          Among them, leveraging self-supervised Vision Transformers for unsupervised semantic segmentation (USS) has been making steady progress with expressive deep features. 
+          Yet, for semantically segmenting images with complex objects, a predominant challenge remains: the lack of explicit object-level semantic encoding in patch-level features. 
+          This technical limitation often leads to inadequate segmentation of complex objects with diverse structures. 
+          To address this gap, we present a novel approach, <i>EAGLE</i>, which emphasizes object-centric representation learning for unsupervised semantic segmentation. 
+          Specifically, we introduce EiCue, a spectral technique providing semantic and structural cues through an eigenbasis derived from the semantic similarity matrix of deep image features and color affinity from an image. 
+          Further, by incorporating our object-centric contrastive loss with EiCue, we guide our model to learn object-level representations with intra- and inter-image object-feature consistency, thereby enhancing semantic accuracy. 
+          Extensive experiments on COCO-Stuff, Cityscapes, and Potsdam-3 datasets demonstrate the state-of-the-art USS results of EAGLE with accurate and consistent semantic segmentation across complex scenes. 
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <!-- <video src="static/images/eagle_video.mp4" controls></video> -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0a799IDW4e0?si=29YK7cFgJBulyQRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3 has-text-centered">Method</h3>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Pipeline</h4>
+        <div class="content has-text-justified">
+          <img src="./static/images/mainfigure.png" alt="Main figure">
+          <br>
+          <p>
+            The pipeline of <i>EAGLE</i>. 
+            Leveraging the Laplacian matrix, which integrates hierarchically projected image key features and color 
+            affinity, the model exploits eigenvector clustering to capture object-level perspective cues defined 
+            as \( \mathrm{\mathcal{M}}_{eicue} \) and \( \mathrm{\tilde{\mathcal{M}}_{eicue}} \). 
+            Distilling knowledge from \( \mathrm{\mathcal{M}}_{eicue} \), our model further adopts an 
+            object-centric contrastive loss, utilizing the projected vector \( \mathrm{Z} \) and \( \mathrm{\tilde{Z}} \). 
+            The learnable prototype \( \mathrm{\Phi} \) assigned from \( \mathrm{Z} \) and \( \mathrm{\tilde{Z}} \), 
+            acts as a singular anchor that contrasts positive objects and negative objects. Our object-centric 
+            contrastive loss is computed in two distinct manners: intra(\( \mathrm{\mathcal{L}}_{obj} \))- and 
+            inter(\( \mathrm{\mathcal{L}}_{sc} \))-image to ensure semantic consistency.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Eigen Aggregation Module</h4>
+        <div class="content has-text-justified">
+          <img src="./static/images/eigenmodule.png" alt="Main figure">
+          <p>
+            An illustration of the EiCue generation. From the input image, both color affinity 
+            matrix \( \mathrm{A_{color}} \) and semantic similarity matrix \( \mathrm{A_{seg}} \) are derived, 
+            which are combined to form the Laplacian \( \mathrm{L_{sym}} \). An eigenvector 
+            subset \( \mathrm{\hat{V}} \) of \( \mathrm{L_{sym}} \) are clustered to produce EiCue.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3 has-text-centered">Visualization of Primary Elements</h3>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Eigenvectors</h4>
+        <section class="hero is-light is-small">
+          <div class="slideContent">
+            <div style="width: 100%;">
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/vector1.png" alt="Eigenvectors figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/vector2.png" alt="Eigenvectors figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/vector3.png" alt="Eigenvectors figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/vector4.png" alt="Eigenvectors figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/vector5.png" alt="Eigenvectors figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/vector6.png" alt="Eigenvectors figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/vector8.png" alt="Eigenvectors figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/vector9.png" alt="Eigenvectors figure">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="content has-text-justified">
+          <p>
+            Visualizing eigenvectors derived from \( \mathrm{S} \) in the Eigen Aggregation Module. 
+            These eigenvectors not only distinguish different objects but also identify semantically related areas, 
+            highlighting how EiCue captures object semantics and boundaries effectively.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">EiCue</h4>
+        <section class="hero is-light is-small">
+          <div class="slideContent">
+            <div style="width: 100%;">
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/eicue1.png" alt="EiCue figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/eicue2.png" alt="EiCue figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/eicue3.png" alt="EiCue figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/eicue4.png" alt="EiCue figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/eicue5.png" alt="EiCue figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/eicue6.png" alt="EiCue figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/eicue7.png" alt="EiCue figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/eicue8.png" alt="EiCue figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/eicue9.png" alt="EiCue figure">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="content has-text-justified">
+          <p>
+            Comparison between K-means and EiCue. 
+            The bottom row presents EiCue, highlighting its superior ability to capture subtle structural 
+            intricacies and understand deeper semantic relationships, which is not as effectively achieved 
+            by K-means.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3 has-text-centered">Qualitative Results</h3>
+        
+        <br>
+        <h4 class="title is-4 has-text-centered">COCO-Stuff</h4>
+        <section class="hero is-light is-small">
+          <div class="slideContent">
+            <div style="width: 100%;">
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/coco1.png" alt="Coco figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/coco2.png" alt="Coco figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/coco3.png" alt="Coco figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/coco4.png" alt="Coco figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/coco5.png" alt="Coco figure">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/labels_coco.png" alt="Coco label">
+          </div>
+        </section>
+        <div class="content has-text-centered">
+          <p>
+            Qualitative results of COCO-Stuff dataset trained with ViT-S/8 backbone.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Cityscapes</h4>
+        <section class="hero is-light is-small">
+          <div class="slideContent">
+            <div style="width: 100%;">
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/city1.png" alt="City figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/city2.png" alt="City figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/city3.png" alt="City figure">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="content has-text-centered">
+                    <img src="./static/images/city4.png" alt="City figure">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/labels_city.png" alt="Coco label">
+          </div>
+        </section>
+        <div class="content has-text-centered">
+          <p>
+            Qualitative results of Cityscapes dataset trained with ViT-B/8 backbone.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Potsdam-3</h4>
+        <section class="hero is-light is-small">
+          <div class="content has-text-centered">
+            <img src="./static/images/potsdam.png" alt="Potsdam supplymentary visualization">
+          </div>
+        </section>
+        <div class="content has-text-centered">
+          <p>
+            Qualitative results of Potsdam-3 dataset trained with ViT-B/8 backbone.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3 has-text-centered">Quantitative Results</h3>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">COCO-Stuff</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/table_coco.png" alt="cocostuff table" width="70%">
+          <p>
+            Quantitative results on the COCO-Stuff dataset.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Cityscapes</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/table_city.png" alt="cityscapes table" width="70%">
+          <p>
+            Quantitative results on the Cityscapes dataset.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Potsdam-3</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/table_potsdam.png" alt="potsdam-3 table" width="70%">
+          <p>
+            Quantitative results on the Potsdam-3 dataset.
+          </p>
+        </div>
+        
+      </div>
+
+    </div>
+    
+  </div>
+
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@InProceedings{eagle2024,
+    author    = {Kim, Chanyoung and Han, Woojung and Ju, Dayun and Hwang, Seong Jae},
+    title     = {EAGLE: Eigen Aggregation Learning for Object-Centric Unsupervised Semantic Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {3523-3533}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./static/js/tag-height.js"></script>
+
+</body>
+</html>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Feagle2024%2F&amp;text=" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Feagle2024%2F&amp;t=" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=&amp;body=http%3A%2F%2Flocalhost%3A1313%2Feagle2024%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Feagle2024%2F&amp;title=" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%20http%3A%2F%2Flocalhost%3A1313%2Feagle2024%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Feagle2024%2F&amp;title=" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      
+      <script>
+
+
+
+
+
+
+
+
+
+</script>
+
+      
+    
+  
+
+
+
+
+
+
+</body>
+</html>
