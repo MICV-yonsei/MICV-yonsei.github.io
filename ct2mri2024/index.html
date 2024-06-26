@@ -975,13 +975,13 @@
         <br>
         <h4 class="title is-4 has-text-centered">Pipeline</h4>
         <div class="content has-text-justified">
-          <img src="./static/images/fig_2.png" alt="Pipeline">
+          <img src="./static/images/fig_2.png" alt="Pipeline" width="100%">
           <br>
           <p>
             Training and sampling scheme of the proposed methods.
             (a) During the multi-slice BBDM training, a target histogram-based style key is injected into the U-Net.
             (b) Target volume sampling proceeds in the manner of the Predictor-Corrector method.
-            During the <i>co-prediction</i> phase, multiple $\bm{\epsilon}^{i,k}_{\theta,t}$ are employed to establish connections among the predicted slices within $\bm{\bar{X}}_{t-1}$.
+            During the <i>co-prediction</i> phase, multiple ${\epsilon}^{i,k}_{\theta,t}$ are employed to establish connections among the predicted slices within ${\bar{X}}_{t-1}$.
             In the subsequent <i>correction</i> phase, the co-predicted volume is refined through a score-guided deterministic process.
           </p>
         </div>
@@ -989,11 +989,11 @@
         <br>
         <h4 class="title is-4 has-text-centered">Inter-Slice Trajectory Alignment (ISTA) Sampling</h4>
         <div class="content has-text-justified">
-          <img src="./static/images/fig_3.png" alt="ISTA">
+          <img src="./static/images/fig_3.png" alt="ISTA" width="100%">
           <p>
             Visualization of the latent space and algorithm for ISTA sampling.
             The trained U-Net produces inconsistent outputs for multi-slice inputs that include the $i^{th}$ slice.
-            The <i>co-prediction</i> unifies the direction of these independent inferences, while the <i>correction</i> aligns the co-predicted $\bar{\bm{x}}_{t}^i$ onto the manifold of $\bm{x}^i_{t}$.
+            The <i>co-prediction</i> unifies the direction of these independent inferences, while the <i>correction</i> aligns the co-predicted $\bar{{x}}_{t}^i$ onto the manifold of ${x}^i_{t}$.
           </p>
         </div>
         
@@ -1014,23 +1014,25 @@
         <h4 class="title is-4 has-text-centered">In-house Dataset (CT$\rightarrow$MRI)</h4>
         <section class="hero is-light is-small">
           <div class="content has-text-centered">
-            <img src="./static/images/fig_4.png" alt="In-house data">
+            <img src="./static/images/fig_4.png" alt="In-house data" width="100%">
           </div>
         </section>
 
+        <br>
         <br>
         <h4 class="title is-4 has-text-centered">BraTS2023 Dataset (FLAIR$\rightarrow$T1)</h4>
         <section class="hero is-light is-small">
           <div class="content has-text-centered">
-            <img src="./static/images/fig_s1.png" alt="BraTS">
+            <img src="./static/images/fig_s1.png" alt="BraTS" width="100%">
           </div>
         </section>
 
         <br>
+        <br>
         <h4 class="title is-4 has-text-centered">Quantitative Results</h4>
         <section class="hero is-light is-small">
           <div class="content has-text-centered">
-            <img src="./static/images/tab_1.png" alt="quant_res">
+            <img src="./static/images/tab_1.png" alt="quant_res" width="100%">
           </div>
         </section>
 
@@ -1048,26 +1050,29 @@
         <h3 class="title is-3 has-text-centered">Additional Studies</h3>
         
         <br>
+        <br>
         <h4 class="title is-4 has-text-centered">Various style keys for SKC (CT$\rightarrow$MRI)</h4>
         <section class="hero is-light is-small">
           <div class="content has-text-centered">
-            <img src="./static/images/fig_s3.png" alt="Potsdam supplymentary visualization">
+            <img src="./static/images/fig_s3.png" alt="Potsdam supplymentary visualization" width="100%">
           </div>
         </section>
 
+        <br>
         <br>
         <h4 class="title is-4 has-text-centered">Ablation Studies for SKC and ISTA (Qualitative)</h4>
         <section class="hero is-light is-small">
           <div class="content has-text-centered">
-            <img src="./static/images/fig_s2.png" alt="Potsdam supplymentary visualization">
+            <img src="./static/images/fig_s2.png" alt="Potsdam supplymentary visualization" width="100%">
           </div>
         </section>
 
         <br>
+        <br>
         <h4 class="title is-4 has-text-centered">Ablation Studies for SKC and ISTA (Quantitative)</h4>
         <section class="hero is-light is-small">
           <div class="content has-text-centered">
-            <img src="./static/images/tab_2.png" alt="Potsdam supplymentary visualization">
+            <img src="./static/images/tab_2.png" alt="Potsdam supplymentary visualization" width="100%">
           </div>
         </section>
 
