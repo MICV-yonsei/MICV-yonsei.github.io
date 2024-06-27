@@ -955,23 +955,23 @@
           This investigation, in particular, brings intriguing insights into PETITE as we show further improvements by treating encoder and decoder separately and mixing different PEFT methods, namely, Mix-PEFT. 
           Using multi-scanner PET datasets comprised of five different scanners, we extensively test the cross-scanner PET scan time reduction performances (i.e., a model pre-trained on one scanner is fine-tuned on a different scanner) of 21 feasible Mix-PEFT combinations to derive optimal PETITE. 
           We show that training with less than 1% parameters using PETITE performs on par with full fine-tuning (i.e., 100% parameter).
-</div>
-      </div>
-    </div>
+<!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
 
-    <br><br><br>
+    <!-- <br><br><br> -->
 
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <!-- <video src="static/images/eagle_video.mp4" controls></video> -->
+          <video src="static/images/eagle_video.mp4" controls></video>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/0a799IDW4e0?si=29YK7cFgJBulyQRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
       </div>
-    </div>
+    </div> -->
 
-  </div>
+  <!-- </div> -->
 </section>
 
 <section class="section">
@@ -986,8 +986,13 @@
           <img src="./static/petite_images/STR.png" alt="Main figure">
           <br>
           <p>
-            The pipeline of <i>PETITE</i>. 
-            Our model employs policy gradient optimization utilizing multi-reward feedback, fine-tuning image generator, and ACE to produce realistic and accurate CXR that corresponds closely to the input report.
+            The overview of <i>PETITE</i>: Scheme for single source-target settings in PET
+            scan time reduction with PEFT. 
+            <br>
+            The most optimal PEFT combination when applying encoder-decoder to each
+            model architecture. <br>To the best of our knowledge, this extensive study represents the first
+            application of the PEFT methodology within the field of medical imaging.
+
             <br>
             <b>Contribution</b>
             <br>
@@ -1034,7 +1039,7 @@
 
         <br>
         <h4 class="title is-4 has-text-centered">3D CVT-GAN</h4>
-        <section class="hero is-light is-small">
+        <section class="hero is-small"> <!-- is-light 클래스 제거 -->
           <div class="slideContent">
             <div style="width: 100%;">
               <div id="results-carousel" class="carousel results-carousel">
@@ -1045,37 +1050,22 @@
                 </div>
                 <div class="">
                   <div class="content has-text-centered">
-                    <img src="./static/images/vector2.png" alt="Eigenvectors figure">
+                    <img src="./static/petite_images/error_map/cvt/cvt_2-1.png" alt="Eigenvectors figure">
                   </div>
                 </div>
                 <div class="">
                   <div class="content has-text-centered">
-                    <img src="./static/images/vector3.png" alt="Eigenvectors figure">
+                    <img src="./static/petite_images/error_map/cvt/cvt_2-4.png" alt="Eigenvectors figure">
                   </div>
                 </div>
                 <div class="">
                   <div class="content has-text-centered">
-                    <img src="./static/images/vector4.png" alt="Eigenvectors figure">
+                    <img src="./static/petite_images/error_map/cvt/cvt_4-3.png" alt="Eigenvectors figure">
                   </div>
                 </div>
                 <div class="">
                   <div class="content has-text-centered">
-                    <img src="./static/images/vector5.png" alt="Eigenvectors figure">
-                  </div>
-                </div>
-                <div class="">
-                  <div class="content has-text-centered">
-                    <img src="./static/images/vector6.png" alt="Eigenvectors figure">
-                  </div>
-                </div>
-                <div class="">
-                  <div class="content has-text-centered">
-                    <img src="./static/images/vector8.png" alt="Eigenvectors figure">
-                  </div>
-                </div>
-                <div class="">
-                  <div class="content has-text-centered">
-                    <img src="./static/images/vector9.png" alt="Eigenvectors figure">
+                    <img src="./static/petite_images/error_map/cvt/cvt_4-5.png" alt="Eigenvectors figure">
                   </div>
                 </div>
               </div>
@@ -1092,60 +1082,39 @@
 
         <br>
         <h4 class="title is-4 has-text-centered">UNETR</h4>
-        <section class="hero is-light is-small">
+        <section class="hero is-small"> <!-- is-light 클래스 제거 -->
           <div class="slideContent">
             <div style="width: 100%;">
               <div id="results-carousel" class="carousel results-carousel">
                 <div class="">
                   <div class="content has-text-centered">
-                    <img src="./static/images/eicue1.png" alt="EiCue figure">
+                    <img src="./static/petite_images/error_map/unetr/unetr_1-3.png" alt="Error Map figure">
                   </div>
                 </div>
                 <div class="">
                   <div class="content has-text-centered">
-                    <img src="./static/images/eicue2.png" alt="EiCue figure">
+                    <img src="./static/petite_images/error_map/unetr/unetr_2-1.png" alt="EiCue figure">
                   </div>
                 </div>
                 <div class="">
                   <div class="content has-text-centered">
-                    <img src="./static/images/eicue3.png" alt="EiCue figure">
+                    <img src="./static/petite_images/error_map/unetr/unetr_2-4.png" alt="EiCue figure">
                   </div>
                 </div>
                 <div class="">
                   <div class="content has-text-centered">
-                    <img src="./static/images/eicue4.png" alt="EiCue figure">
+                    <img src="./static/petite_images/error_map/unetr/unetr_4-5.png" alt="EiCue figure">
                   </div>
                 </div>
-                <div class="">
-                  <div class="content has-text-centered">
-                    <img src="./static/images/eicue5.png" alt="EiCue figure">
-                  </div>
-                </div>
-                <div class="">
-                  <div class="content has-text-centered">
-                    <img src="./static/images/eicue6.png" alt="EiCue figure">
-                  </div>
-                </div>
-                <div class="">
-                  <div class="content has-text-centered">
-                    <img src="./static/images/eicue7.png" alt="EiCue figure">
-                  </div>
-                </div>
-                <div class="">
-                  <div class="content has-text-centered">
-                    <img src="./static/images/eicue8.png" alt="EiCue figure">
-                  </div>
-                </div>
-                <div class="">
-                  <div class="content has-text-centered">
-                    <img src="./static/images/eicue9.png" alt="EiCue figure">
-                  </div>
-                </div>
-
               </div>
             </div>
           </div>
         </section>
+      </div>
+    </div>
+  </div>
+</section>
+
         <div class="content has-text-justified">
           <p>
             <br>
@@ -1279,13 +1248,13 @@
         <br>
         <div class="columns is-centered">
           <div class="column">
-            <h4 class="title is-4 has-text-centered">3D CVT-GAN</h4>
+            <!-- <h4 class="title is-4 has-text-centered">3D CVT-GAN</h4> -->
             <div class="content has-text-centered">
               <img src="./static/petite_images/main_cvt_result.png" alt="cocostuff table" width="100%">
             </div>
           </div>
           <div class="column">
-            <h4 class="title is-4 has-text-centered">UNETR</h4>
+            <!-- <h4 class="title is-4 has-text-centered">UNETR</h4> -->
             <div class="content has-text-centered">
               <img src="./static/petite_images/main_unetr_result.png" alt="cocostuff table" width="100%">
             </div>
@@ -1293,8 +1262,9 @@
         </div>
         <div class="content has-text-centered">
           <p>
-            Quantitative comparison of PSNR, SSIM, and NRMSE <br> 
-            between PETITE and other PEFT methods. <br> 
+            Quantitative comparison with 3D CVT-GAN [25] and UNETR [8]. The table
+            compares the performance of various PEFT methods and PETITE (Ours) using PSNR,
+            SSIM, and NRMSE evaluation metrics. <br>
             <i>Best</i> : <strong>Bold</strong>; <i>Second best</i> : <u>Underline</u>.
           </p>
         </div>
@@ -1312,13 +1282,13 @@
         <br>
         <div class="columns is-centered">
           <div class="column">
-            <h4 class="title is-4 has-text-centered">3D CVT-GAN</h4>
+            <!-- <h4 class="title is-4 has-text-centered">3D CVT-GAN</h4> -->
             <div class="content has-text-centered">
               <img src="./static/petite_images/ablation_cvt.png" alt="cocostuff table" width="100%">
             </div>
           </div>
           <div class="column">
-            <h4 class="title is-4 has-text-centered">UNETR</h4>
+            <!-- <h4 class="title is-4 has-text-centered">UNETR</h4> -->
             <div class="content has-text-centered">
               <img src="./static/petite_images/ablation_unetr.png" alt="cocostuff table" width="100%">
             </div>
@@ -1326,7 +1296,7 @@
         </div>
         <div class="content has-text-centered">
           <p>
-            캡션 수정해야함.
+            Comparison with experimental with BitFit. <br>
             <i>Best</i> : <strong>Bold</strong>; <i>Second best</i> : <u>Underline</u>.
           </p>
         </div>
@@ -1339,47 +1309,75 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h3 class="title is-3 has-text-centered">Details of Experiments?</h3>
+        <h3 class="title is-3 has-text-centered">Details of Experiments</h3>
 
         <br>
         <div class="columns is-centered">
           <div class="column">
             <h4 class="title is-4 has-text-centered">Scanner Specifications</h4>
             <div class="content has-text-centered">
-              <!-- <img src="./static/petite_images/ablation_cvt.png" alt="cocostuff table" width="100%"> -->
+              <img src="./static/petite_images/scanner_info.png" alt="cocostuff table" width="100%">
             </div>
           </div>
           
         </div>
         <div class="content has-text-centered">
           <p>
-            캡션 추가.
           </p>
         </div>
         
         <br>
         <div class="columns is-centered">
           <div class="column">
-            <h4 class="title is-4 has-text-centered">Implementations</h4>
+            <h4 class="title is-4 has-text-centered">Computation costs of PEFT methods</h4>
             <div class="content has-text-centered">
-              <!-- <img src="./static/petite_images/ablation_cvt.png" alt="cocostuff table" width="100%"> -->
+              <img src="./static/petite_images/computational_cost.png" alt="cocostuff table" width="100%">
             </div>
           </div>
           
         </div>
         <div class="content has-text-centered">
           <p>
-            캡션 추가.
           </p>
         </div>
+        </div>
 
-
+      
 
       </div>
     </div>
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3 has-text-centered">21 Feasible Experimental Mix-PEFT with BitFit</h3>
+
+        <br>
+        <div class="columns is-centered is-vcentered">
+          <div class="column is-half">
+            <h4 class="title is-4 has-text-centered">3D CVT-GAN</h4>
+            <div class="content has-text-centered">
+              <img src="./static/petite_images/mix_peft_cvt.png" alt="cocostuff table" width="100%">
+            </div>
+          </div>
+          <div class="column is-half">
+            <h4 class="title is-4 has-text-centered">UNETR</h4>
+            <div class="content has-text-centered">
+              <img src="./static/petite_images/mix_peft_unetr.png" alt="cocostuff table" width="100%">
+            </div>
+          </div>
+        </div>
+        <div class="content has-text-centered">
+          <p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -1392,7 +1390,6 @@
     booktitle = {Medical Image Computing and Computer Assisted Intervention (MICCAI)},
     month     = {June},
     year      = {2024},
-    pages     = {?}
 }</code></pre>
   </div>
 </section>
@@ -1443,7 +1440,7 @@
       
       
       
-        
+      
       
       
       
