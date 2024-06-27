@@ -950,12 +950,14 @@
           Reducing scan time in Positron Emission Tomography (PET) imaging while maintaining high-quality images is crucial for minimizing patient discomfort and radiation exposure. 
           Due to the limited size of datasets and distribution discrepancy across scanners in medical imaging, fine-tuning in a parameter-efficient and effective manner is on the rise. 
           Motivated by the potential of Parameter-Efficient Fine-Tuning (PEFT), we aim to address these issues by effectively leveraging PEFT to improve limited data and GPU resource issues in multi-scanner setups. 
-          In this paper, we introduce PETITE, Parameter-Efficient Fine-Tuning for MultI-scanner PET to PET REconstruction that uses fewer than 1% of the parameters. 
-          To the best of our knowledge, this study is the first to systematically explore the efficacy of diverse PEFT techniques in medical imaging reconstruction tasks via prevalent encoder-decoder-type deep models.
-          This investigation, in particular, brings intriguing insights into PETITE as we show further improvements by treating encoder and decoder separately and mixing different PEFT methods, namely, Mix-PEFT. 
-          Using multi-scanner PET datasets comprised of five different scanners, we extensively test the cross-scanner PET scan time reduction performances (i.e., a model pre-trained on one scanner is fine-tuned on a different scanner) of 21 feasible Mix-PEFT combinations to derive optimal PETITE. 
-          We show that training with less than 1% parameters using PETITE performs on par with full fine-tuning (i.e., 100% parameter).
-<!-- </div> -->
+          In this paper, we introduce <b>PETITE</b>, Parameter-Efficient Fine-Tuning for MultI-scanner PET to PET REconstruction which represents the optimal PEFT combination when independently 
+          applying encoder-decoder components to each model architecture. 
+          To the best of our knowledge, this study is the first to systematically explore the efficacy of diverse PEFT techniques in medical imaging reconstruction tasks 
+          via prevalent encoder-decoder models. This investigation, in particular, brings intriguing insights into PETITE as we show further improvements by treating
+          encoder and decoder separately and mixing different PEFT methods, namely, Mix-PEFT. 
+          Using multi-scanner PET datasets comprised of five different scanners, we extensively test the cross-scanner PET scan time
+          reduction performances (i.e., a model pre-trained on one scanner is fine-tuned on a different scanner) of 21 feasible Mix-PEFT combinations to
+          derive optimal PETITE. We show that training with less than 1% parameters using PETITE performs on par with full fine-tuning (i.e., 100% parameter).
       <!-- </div> -->
     <!-- </div> -->
 
@@ -989,8 +991,7 @@
             The overview of <i>PETITE</i>: Scheme for single source-target settings in PET
             scan time reduction with PEFT. 
             <br>
-            The most optimal PEFT combination when applying encoder-decoder to each
-            model architecture. <br>To the best of our knowledge, this extensive study represents the first
+            The optimal PEFT combination independently applying encoder-decoder components to each model architecture. <br>To the best of our knowledge, this extensive study represents the first
             application of the PEFT methodology within the field of medical imaging.
 
             <br>
