@@ -895,7 +895,7 @@
               <span>Paper</span>
             </a>
           </span>
-          <span class="link-block">
+          <!-- <span class="link-block">
             <a href="https://drive.google.com/drive/folders/1bnxQ8Z5C5PkFtnZaMEZecdygcOolUKJW?usp=sharing"
                class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
@@ -903,7 +903,7 @@
               </span>
               <span>arXiv</span>
             </a>
-          </span>
+          </span> -->
           <!-- Code Link. -->
           <span class="link-block">
             <a href="https://drive.google.com/drive/folders/1bnxQ8Z5C5PkFtnZaMEZecdygcOolUKJW?usp=sharing"
@@ -943,15 +943,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           While Vision Transformer has facilitated remarkable advancements in computer vision, it concurrently requires vast amounts of training data and iterations. 
-          To overcome these constraints, transfer learning utilizes knowledge from networks pretrained with substantial resources. 
-          However, privacy attacks such as Model Inversion may pose a threat by potentially exposing training data through shared network weights, which is particularly critical in the medical field where data privacy must be taken into account. 
-          Departing from the conventional weight transfer scheme sharing entire weight parameters under risk, we introduce the innovative and straightforward transfer strategy, called \textit{Prompt Distillation}. 
-          Prompt distillation compresses knowledge of the pretrained network into prompt embeddings and shares these embeddings instead of network weights. 
-          This process is conducted by effectively leveraging the attention mechanism to reveal relationships in knowledge. 
-          In our experiments, prompt distillation outperformed training from scratch and achieved close performance to full weights transfer learning, while reducing the parameter scale up to 90 times lighter than full weights. 
-          Moreover, it demonstrates the ability to transfer knowledge between already-trained networks without additional modules or complex procedures. 
-          By merely inserting prompts and training a few additional iterations, it showed improved results compared to inference with the already-trained network alone. 
-          Its applications were validated through medical image classification tasks across three domains, chest X-ray, pathology, and retinography, distinct in degrees of the distribution shift.
+          Transfer learning utilizes knowledge from pre-trained networks to overcome these, but it is difficult to share entire network weights in the medical field where data privacy must be taken into account.
+          We introduce the innovative transfer strategy, called \textit{Prompt Distillation}, which shares prompts instead of network weights. 
+          Prompt distillation compresses knowledge of the pre-trained network into prompts by effectively leveraging the attention mechanism.
+          In experiments, it outperformed training from scratch and achieved close performance to full weights transfer learning, while reducing the parameter scale up to 90 times lighter than full weights. 
+          Moreover, it demonstrates the ability to transfer knowledge between already-trained networks by merely inserting prompts.
+          Its applications were validated through medical image classification across three domains, chest X-ray, pathology, and retinography, distinct in degrees of the distribution shift.
         </div>
       </div>
     </div>
@@ -983,13 +980,12 @@
           <img src="./static/images_promptdistill/mainfigure.png" alt="Main figure">
           <br>
           <p>
-            The pipeline of <i>Prompt Distillation</i> based transfer learning. 
+            The pipeline of <b>Prompt Distillation</b> based transfer learning. 
             In the pretraining step, a network is trained with a large-scale dataset and acquires generalization. 
-            In the prompt distillation step, we inject prompts in the pretrained network's embedding space and compress knowledge from the pretrained networks into prompts. 
+            In the prompt distillation step, we inject prompts in the pre-trained network's embedding space and compress knowledge from the pre-trained networks into prompts. 
             Compression is conducted by training the network in supervision for simplicity, and nested dropout and knowledge distillation techniques can be applied. 
             Prompt distillation is divided into two categories based on where prompts are projected. 
-            <b>Prompt Learning</b> projects prompts onto query, key, and value vectors, and <b>Query Learning</b> projects onto query vectors only. 
-            Prompt learning updates prompts to adapt the network toward a deep understanding of training data, while query learning updates prompts to summarize. 
+            <i>Prompt distillation</i> projects prompts onto query, key, and value vectors, and updates prompts to adapt the network toward a deep understanding of training data. 
             Learned prompts are shared instead of pretrained network weights. 
             In a transfer learning step, targets with a smaller, task-specific dataset attach learned prompts to their networks and leverage generalized knowledge in prompts to optimize particular objectives.
           </p>
@@ -1000,10 +996,8 @@
         <div class="content has-text-justified">
           <img src="./static/images_promptdistill/compression.png" alt="Main figure">
           <p>
-            An illustration of the knowledge compression strategies for distilling prompts. 
-            (a) Visual Prompt Tuning injects prompts between a class embeddings and patch embeddings and learns relationship through supervised learning.
-            (b) Ordered Representation learns different degrees of importance across dimensions by stochastically masks nested subsets of hidden units.
-            (c) Knowledge Distillation compresses knowledge in the cumbersome network (Teacher) to the same network injected prompts (Student).
+            An illustration of the knowledge compression for distilling prompts. 
+            Visual Prompt Tuning injects prompts between a class embeddings and patch embeddings and learns relationship through supervised learning.
           </p>
         </div>
         
@@ -1028,29 +1022,20 @@
         </div>
 
         <br>
-        <h4 class="title is-4 has-text-centered">Knowledge Compression</h4>
-        <div class="content has-text-centered">
-          <img src="./static/images_promptdistill/tab2_a.png" alt="knowledge compression table" width="70%">
-          <p>
-            Comparing distinct knowledge compression strategies.
-          </p>
-        </div>
-
-        <br>
         <h4 class="title is-4 has-text-centered">Knowledge Enhancement</h4>
         <div class="content has-text-centered">
-          <img src="./static/images_promptdistill/tab2_b.png" alt="knowledge enhancement table" width="70%">
+          <img src="./static/images_promptdistill/tab2.png" alt="knowledge enhancement table" width="70%">
           <p>
             Analyze the enhancement ability to already-trained networks.
           </p>
         </div>
 
         <br>
-        <h4 class="title is-4 has-text-centered">Verifying Prompt Distillation</h4>
+        <h4 class="title is-4 has-text-centered">Knowledge Compression</h4>
         <div class="content has-text-centered">
-          <img src="./static/images_promptdistill/tab3.png" alt="validation table" width="70%">
+          <img src="./static/images_promptdistill/tab3.png" alt="knowledge compression table" width="70%">
           <p>
-            Validation of prompt distillation against other parameter transfer strategies.
+            Comparing distinct knowledge compression strategies.
           </p>
         </div>
 
