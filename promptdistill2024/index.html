@@ -883,9 +883,8 @@
         
       </div>
 
-      <div class="column has-text-centered">
+      <!-- <div class="column has-text-centered">
         <div class="publication-links">
-          <!-- PDF Link. -->
           <span class="link-block">
             <a href="https://drive.google.com/drive/folders/1bnxQ8Z5C5PkFtnZaMEZecdygcOolUKJW?usp=sharing"
                class="external-link button is-normal is-rounded is-dark">
@@ -895,7 +894,6 @@
               <span>Paper</span>
             </a>
           </span>
-          <!-- <span class="link-block">
             <a href="https://drive.google.com/drive/folders/1bnxQ8Z5C5PkFtnZaMEZecdygcOolUKJW?usp=sharing"
                class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
@@ -903,8 +901,7 @@
               </span>
               <span>arXiv</span>
             </a>
-          </span> -->
-          <!-- Code Link. -->
+          </span>
           <span class="link-block">
             <a href="https://drive.google.com/drive/folders/1bnxQ8Z5C5PkFtnZaMEZecdygcOolUKJW?usp=sharing"
                class="external-link button is-normal is-rounded is-dark">
@@ -914,8 +911,7 @@
               <span>Code</span>
               </a>
           </span>
-          
-        </div>
+        </div> -->
     </div>
   </div>
 </section>
@@ -942,13 +938,14 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          While Vision Transformer has facilitated remarkable advancements in computer vision, it concurrently requires vast amounts of training data and iterations. 
-          Transfer learning utilizes knowledge from pre-trained networks to overcome these, but it is difficult to share entire network weights in the medical field where data privacy must be taken into account.
-          We introduce the innovative transfer strategy, called \textit{Prompt Distillation}, which shares prompts instead of network weights. 
-          Prompt distillation compresses knowledge of the pre-trained network into prompts by effectively leveraging the attention mechanism.
-          In experiments, it outperformed training from scratch and achieved close performance to full weights transfer learning, while reducing the parameter scale up to 90 times lighter than full weights. 
+          While Vision Transformers have facilitated remarkable advancements in computer vision, they require vast training data and iterations. 
+          Transfer learning is widely used to overcome these challenges, utilizing knowledge from pre-trained networks. 
+          However, sharing entire network weights for transfer learning is difficult in the medical field due to data privacy concerns.
+          To address these concerns, we introduce an innovative transfer strategy called <b><i>Prompt Distillation</i></b> which shares prompts instead of network weights. 
+          It compresses knowledge in pre-trained networks to prompts by effectively leveraging the attention mechanism.
+          In experiments, it outperformed training from scratch and achieved comparable performance to full-weight transfer learning, while reducing the parameter scale by up to 90 times compared to full-weight. 
           Moreover, it demonstrates the ability to transfer knowledge between already-trained networks by merely inserting prompts.
-          Its applications were validated through medical image classification across three domains, chest X-ray, pathology, and retinography, distinct in degrees of the distribution shift.
+          It is validated through medical image classification across three domains, chest X-ray, pathology, and retinography, distinct in degrees of distribution shifts.
         </div>
       </div>
     </div>
@@ -981,13 +978,9 @@
           <br>
           <p>
             The pipeline of <b>Prompt Distillation</b> based transfer learning. 
-            In the pretraining step, a network is trained with a large-scale dataset and acquires generalization. 
-            In the prompt distillation step, we inject prompts in the pre-trained network's embedding space and compress knowledge from the pre-trained networks into prompts. 
-            Compression is conducted by training the network in supervision for simplicity, and nested dropout and knowledge distillation techniques can be applied. 
-            Prompt distillation is divided into two categories based on where prompts are projected. 
-            <i>Prompt distillation</i> projects prompts onto query, key, and value vectors, and updates prompts to adapt the network toward a deep understanding of training data. 
-            Learned prompts are shared instead of pretrained network weights. 
-            In a transfer learning step, targets with a smaller, task-specific dataset attach learned prompts to their networks and leverage generalized knowledge in prompts to optimize particular objectives.
+            After pre-training, prompts are inserted inside the pre-trained source network and trained for a few epochs (Step 2).
+            Then, these learned prompts are shared in place of network weights to target networks for transfer learning (Step 3). 
+            ``Train" and ``Frozen" refer to whether backpropagation is performed, which involves calculating the gradients and updating the parameters, or not.
           </p>
         </div>
 
@@ -996,8 +989,10 @@
         <div class="content has-text-justified">
           <img src="./static/images_promptdistill/mainfigure.png" alt="Main figure">
           <p>
-            An illustration of the knowledge compression for distilling prompts. 
-            Visual Prompt Tuning injects prompts between a class embeddings and patch embeddings and learns relationship through supervised learning.
+            The framework of prompt distillation. 
+            Red tokens represent prompts, which are injected into Transformer encoders. 
+            During prompt distillation, Transformer remains frozen (i.e. not back-propagated), and only prompts are trained (i.e. back-propagated). 
+            Prompts from the previous layer are removed as new prompts are inserted into the next layer.
           </p>
         </div>
         
@@ -1056,15 +1051,9 @@
         <br>
         <h4 class="title is-4 has-text-centered">The Number of Prompt and Distillation Epochs</h4>
         <div class="content has-text-centered">
-          <img src="./static/images_promptdistill/abl1.png" alt="transfer learning table" width="100%">
+          <img src="./static/images_promptdistill/tab4.png" alt="transfer learning table" width="100%">
           <p>
-            Effects of the number of prompt embeddings and distillation epochs on prompt projection types.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/images_promptdistill/abl2.png" alt="knowledge compression table" width="100%">
-          <p>
-            CEffects of the number of prompt embeddings and distillation epochs on prompt compression strategies.
+            Effects of the number of prompt embeddings and distillation epochs.
           </p>
         </div>
       </div>
