@@ -11,7 +11,15 @@
       <title>Publications</title>
       <link>http://localhost:1313/publication/</link>
     </image>
-    
+
+    <item>
+      <title>isentangling Disentangled Representations: Towards Improved Latent Units via Diffusion Models</title>
+      <link>http://localhost:1313/publication/2025-wacv-disentangle/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2025-wacv-disentangle/</guid>
+      <description></description>
+    </item>
+
     <item>
       <title>Advancing Text-Driven Chest X-Ray Generation with Policy-Based Reinforcement Learning</title>
       <link>http://localhost:1313/publication/2024-miccai-cxrl/</link>
