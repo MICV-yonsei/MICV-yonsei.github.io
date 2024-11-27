@@ -153,7 +153,7 @@
     <div class="container is-max-desktop">
       <!-- Title and Author Overlay -->
       <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; width: 100%; text-align: center; height: 300px; display: flex; flex-direction: column; justify-content: center;">
-        <h1 class="title is-3 publication-title" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); margin: 0 auto; max-width: 100%; margin-bottom: 0.5rem;">
+        <h1 class="title is-3 publication-title" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); margin: 0 auto; max-width: 80%; padding: 0 20px; margin-bottom: 0.5rem;">
           Distilling Spectral Graph for Object-Context Aware Open-Vocabulary Semantic Segmentation
         </h1>
         
@@ -313,13 +313,16 @@
 
         <br>
         <h4 class="title is-4 has-text-centered">Overall Pipeline</h4>
-        <div class="content has-text-centered">
-          <img src="./static/images/overview.png" alt="Main figure" width="750%">
-          <br>
-          <p>
-            We present CASS, object-level Context-Aware training-free open-vocabulary Semantic Segmentation model. 
-            Our method distills the vision foundation model's (VFM) object-level contextual spectral graph into CLIP's attention and refines query text embeddings towards object-specific semantics.
-          </p>
+        <div class="content">
+          <div style="text-align: center;">
+            <img src="./static/images/overview.png" alt="Main figure" width="75%">
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <p style="max-width: 800px; text-align: center;">
+              We present CASS, object-level Context-Aware training-free open-vocabulary Semantic Segmentation model. 
+              Our method distills the vision foundation model's (VFM) object-level contextual spectral graph into CLIP's attention and refines query text embeddings towards object-specific semantics.
+            </p>
+          </div>
         </div>
 
         <br>
@@ -336,11 +339,13 @@
         <h4 class="title is-4 has-text-centered">Object Presence-Driven Object-Level Context</h4>
         <div class="content has-text-centered">
           <img src="./static/images/OTA.png" alt="Main figure" width="80%">
-          <p>
-            Detailed illustration of our object presence prior-guided text embedding adjustment module.
-   The CLIP text encoder generates text embeddings for each object class, and the object presence prior is derived from both visual and text embeddings. 
-   Within hierarchically defined class groups, text embeddings are selected based on object presence prior, then refined in an object-specific direction to align with components likely present in the image.
-          </p>
+          <div style="display: flex; justify-content: center;">
+            <p style="max-width: 800px; text-align: center;">
+              Detailed illustration of our object presence prior-guided text embedding adjustment module.
+              The CLIP text encoder generates text embeddings for each object class, and the object presence prior is derived from both visual and text embeddings. 
+              Within hierarchically defined class groups, text embeddings are selected based on object presence prior, then refined in an object-specific direction to align with components likely present in the image.
+            </p>
+          </div>
         </div>
         
       </div>
@@ -359,11 +364,15 @@
 
         <br>
         <h4 class="title is-4 has-text-centered">Effect of Spectral Object-Level Context Distillation</h4>
-        <div class="content has-text-centered">
-          <img src="./static/images/attention.png" alt="attention visualization" width="80%">
-          <p>
-            Attention score visualization for various query points. Left: Vanilla CLIP (\(A_{\text{CLIP}}\)) shows noisy, unfocused attention. Center: VFM-to-CLIP distillation without low-rank eigenscaling shows partial object grouping with limited detail. Right: Incorporating our low-rank eigenscaling captures object-level context, improving grouping within a single object.
-          </p>
+        <div class="content">
+          <div style="text-align: center;">
+            <img src="./static/images/attention.png" alt="attention visualization" width="80%">
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <p style="max-width: 800px; text-align: justify;">
+              Attention score visualization for various query points. Left: Vanilla CLIP (A<sub>CLIP</sub>) shows noisy, unfocused attention. Center: VFM-to-CLIP distillation without low-rank eigenscaling shows partial object grouping with limited detail. Right: Incorporating our low-rank eigenscaling captures object-level context, improving grouping within a single object.
+            </p>
+          </div>
         </div>
 
       </div>

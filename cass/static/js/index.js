@@ -149,12 +149,16 @@ $(document).ready(function() {
             }
         }
         
-        // Slide every 3 seconds
-        const slideInterval = setInterval(slide, 4000);
+        let slideInterval = setInterval(slide, 4000);
         
         // Pause on hover
-        slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
-        slider.addEventListener('mouseleave', () => setInterval(slide, 3000));
+        slider.addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+        
+        slider.addEventListener('mouseleave', () => {
+            slideInterval = setInterval(slide, 4000);
+        });
     }
     
     setupImageSlider();
