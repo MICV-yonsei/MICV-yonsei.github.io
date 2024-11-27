@@ -237,7 +237,7 @@
             </a>
           </span> -->
           <span class="link-block">
-            <a href=""
+            <a href="https://arxiv.org/pdf/2411.17150"
                class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                   <i class="ai ai-arxiv"></i>
@@ -269,42 +269,7 @@
         <img src="./static/images/intro.png" alt="Teaser Image" width="100%">
       </div>
       <br>
-      <!-- <div class="columns is-centered">
-        <div class="column">
-          <div class="image-at-center">
-            <img src="./static/images/pikachu.gif" alt="Example GIF 1" style="height: 200px; object-fit: contain;">
-          </div>
-        </div>
-        <div class="column">
-          <div class="image-at-center">
-            <img src="./static/images/mario.gif" alt="Example GIF 2" style="height: 200px; object-fit: contain;">
-          </div>
-        </div>
-        <div class="column">
-          <div class="image-at-center">
-            <img src="./static/images/thinker.gif" alt="Example GIF 3" style="height: 200px; object-fit: contain;">
-          </div>
-        </div>
-      </div> -->
-      <!-- <br> -->
-      <!-- <div class="columns is-centered">
-        <div class="column">
-          <div class="image-at-center">
-            <img src="./static/images/spaceneedle.gif" alt="Example GIF 1" style="height: 300px; object-fit: contain;">
-          </div>
-        </div>
-        <div class="column">
-          <div class="image-at-center">
-            <img src="./static/images/pyramid.gif" alt="Example GIF 2" style="height: 300px; object-fit: contain;">
-          </div>
-        </div>
-        <div class="column">
-          <div class="image-at-center">
-            <img src="./static/images/audi.gif" alt="Example GIF 3" style="height: 300px; object-fit: contain;">
-          </div>
-        </div>
-      </div> -->
-      <!-- <br> -->
+
       <h2 class="subtitle has-text-centered">
         We introduce <b><i>CASS</i></b>,
         <br>Distilling Spectral Graph for Object-<b>C</b>ontext <b>A</b>ware Open-Vocabulary <b>S</b>emantic <b>S</b>egmentation.
@@ -348,12 +313,12 @@
 
         <br>
         <h4 class="title is-4 has-text-centered">Overall Pipeline</h4>
-        <div class="content has-text-justified">
-          <img src="./static/images/overview.png" alt="Main figure">
+        <div class="content has-text-centered">
+          <img src="./static/images/overview.png" alt="Main figure" width="750%">
           <br>
           <p>
             We present CASS, object-level Context-Aware training-free open-vocabulary Semantic Segmentation model. 
-            Our method distills the vision foundation model's (VFM) object-level contextual spectral graph into CLIP’s attention and refines query text embeddings towards object-specific semantics.
+            Our method distills the vision foundation model's (VFM) object-level contextual spectral graph into CLIP's attention and refines query text embeddings towards object-specific semantics.
           </p>
         </div>
 
@@ -363,14 +328,14 @@
           <img src="./static/images/local.png" alt="Main figure">
           <p>
             Detailed illustration of our proposed training-free spectral object-level context distillation mechanism. 
-    By matching the attention graphs of VFM and CLIP head-by-head to establish complementary relationships, and distilling the fundamental object-level context of the VFM graph to CLIP, we enhance CLIP’s ability to capture intra-object contextual coherence.
+    By matching the attention graphs of VFM and CLIP head-by-head to establish complementary relationships, and distilling the fundamental object-level context of the VFM graph to CLIP, we enhance CLIP's ability to capture intra-object contextual coherence.
           </p>
         </div>
 
         <br>
         <h4 class="title is-4 has-text-centered">Object Presence-Driven Object-Level Context</h4>
-        <div class="content has-text-justified">
-          <img src="./static/images/OTA.png" alt="Main figure">
+        <div class="content has-text-centered">
+          <img src="./static/images/OTA.png" alt="Main figure" width="80%">
           <p>
             Detailed illustration of our object presence prior-guided text embedding adjustment module.
    The CLIP text encoder generates text embeddings for each object class, and the object presence prior is derived from both visual and text embeddings. 

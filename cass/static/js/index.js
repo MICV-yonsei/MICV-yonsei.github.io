@@ -120,21 +120,24 @@ $(document).ready(function() {
         const slider = document.getElementById('image-slider');
         const items = Array.from(slider.getElementsByClassName('slider-item'));
         
-        // 무한 슬라이드를 위해 처음 아이템들을 복제하여 끝에 추가
+        // Clone items for infinite scroll
         items.forEach(item => {
             const clone = item.cloneNode(true);
             slider.appendChild(clone);
         });
         
         let position = 0;
-        const slideWidth = 16.666; // 각 슬라이드 아이템의 너비 퍼센트
+        const slideWidth = 33.333; // 변경: 16.666에서 33.333으로 증가
         
         function slide() {
             position -= slideWidth;
             slider.style.transform = `translateX(${position}%)`;
             
-            // 슬라이드가 끝에 도달하면 처음으로 리셋
-            if (position <= -100) {
+            // 수정: 마지막 이미지를 완전히 보여주기 위해 계산 방식 변경
+            const totalSlides = slider.children.length;
+            const endPosition = -(totalSlides - 3) * slideWidth; // 한 번에 3개의 슬라이드가 보이므로
+            
+            if (position <= endPosition) {
                 setTimeout(() => {
                     slider.style.transition = 'none';
                     position = 0;
@@ -146,10 +149,10 @@ $(document).ready(function() {
             }
         }
         
-        // 3초마다 슬라이드
-        const slideInterval = setInterval(slide, 3000);
+        // Slide every 3 seconds
+        const slideInterval = setInterval(slide, 4000);
         
-        // 마우스 호버 시 일시정지
+        // Pause on hover
         slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
         slider.addEventListener('mouseleave', () => setInterval(slide, 3000));
     }
