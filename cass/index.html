@@ -314,11 +314,11 @@
         <br>
         <h4 class="title is-4 has-text-centered">Overall Pipeline</h4>
         <div class="content has-text-centered">
-            <img src="./static/images/overview.png" alt="Main figure" width="75%">
-            <p style="max-width: 800px; text-align: center;">
-              We present CASS, object-level Context-Aware training-free open-vocabulary Semantic Segmentation model. 
-              Our method distills the vision foundation model's (VFM) object-level contextual spectral graph into CLIP's attention and refines query text embeddings towards object-specific semantics.
-            </p>
+          <img src="./static/images/overview.png" alt="Main figure" width="70%">
+          <p>
+            We present CASS, object-level Context-Aware training-free open-vocabulary Semantic Segmentation model. 
+            Our method distills the vision foundation model's (VFM) object-level contextual spectral graph into CLIP's attention and refines query text embeddings towards object-specific semantics.
+          </p>
         </div>
 
         <br>
@@ -330,7 +330,7 @@
     By matching the attention graphs of VFM and CLIP head-by-head to establish complementary relationships, and distilling the fundamental object-level context of the VFM graph to CLIP, we enhance CLIP's ability to capture intra-object contextual coherence.
           </p>
         </div>
-
+<!-- 
         <br>
         <h4 class="title is-4 has-text-centered">Object Presence-Driven Object-Level Context</h4>
         <div class="content has-text-centered">
@@ -341,6 +341,17 @@
               Within hierarchically defined class groups, text embeddings are selected based on object presence prior, then refined in an object-specific direction to align with components likely present in the image.
             </p>
           </div>
+        </div> -->
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Object Presence-Driven Object-Level Context</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/OTA.png" alt="Main figure" width="70%">
+          <p>
+            Detailed illustration of our object presence prior-guided text embedding adjustment module.
+            The CLIP text encoder generates text embeddings for each object class, and the object presence prior is derived from both visual and text embeddings. 
+            Within hierarchically defined class groups, text embeddings are selected based on object presence prior, then refined in an object-specific direction to align with components likely present in the image.
+        </p>
         </div>
         
       </div>
@@ -357,14 +368,25 @@
       <div class="column is-four-fifths">
         <h3 class="title is-3 has-text-centered">Visualization</h3>
 
-        <br>
+        <!-- <br>
         <h4 class="title is-4 has-text-centered">Effect of Spectral Object-Level Context Distillation</h4>
         <div class="content has-text-centered">
             <img src="./static/images/attention.png" alt="attention visualization" width="80%">
             <p>
               Attention score visualization for various query points. Left: Vanilla CLIP (A<sub>CLIP</sub>) shows noisy, unfocused attention. Center: VFM-to-CLIP distillation without low-rank eigenscaling shows partial object grouping with limited detail. Right: Incorporating our low-rank eigenscaling captures object-level context, improving grouping within a single object.
             </p>
+        </div> -->
+
+        
+        <br>
+        <h4 class="title is-4 has-text-centered">Effect of Spectral Object-Level Context Distillation</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/attention.png" alt=attention visualization" width="70%">
+          <p>
+            Attention score visualization for various query points. Left: Vanilla CLIP (A<sub>CLIP</sub>) shows noisy, unfocused attention. Center: VFM-to-CLIP distillation without low-rank eigenscaling shows partial object grouping with limited detail. Right: Incorporating our low-rank eigenscaling captures object-level context, improving grouping within a single object.
+          </p>
         </div>
+
       </div>
     </div>
     
