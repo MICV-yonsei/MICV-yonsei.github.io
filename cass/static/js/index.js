@@ -127,8 +127,28 @@ $(document).ready(function() {
         });
         
         let position = 0;
-        const slideWidth = 33.333; // 변경: 16.666에서 33.333으로 증가
         
+        // 화면 너비에 따라 슬라이드 너비 계산하는 함수
+        function getSlideWidth() {
+            if (window.innerWidth <= 768) {
+                return 100; // 모바일에서는 한 번에 1개 표시 (100%)
+            } else if (window.innerWidth <= 1024) {
+                return 50;  // 태블릿에서는 한 번에 2개 표시 (50%)
+            } else {
+                return 33.333; // 데스크톱에서는 한 번에 3개 표시 (33.333%)
+            }
+        }
+        
+        let slideWidth = getSlideWidth();
+        
+        // 윈도우 리사이즈 이벤트 처리
+        window.addEventListener('resize', () => {
+            slideWidth = getSlideWidth();
+            // 리사이즈 시 위치 재조정
+            position = 0;
+            slider.style.transform = `translateX(${position}%)`;
+        });
+
         function slide() {
             position -= slideWidth;
             slider.style.transform = `translateX(${position}%)`;
