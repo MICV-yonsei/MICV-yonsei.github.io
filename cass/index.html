@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: June 8, 2024 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+<meta name="description" content="Distilling Spectral Graph for Object-Context Aware Open-Vocabulary Semantic Segmentation. A novel approach that enhances intra-object consistency by distilling spectral-driven features from vision foundation models into the attention mechanism of the visual encoder." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/cass/" />
+<link rel="canonical" href="http://localhost:1313/cass/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="http://localhost:1313/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_512x512_fill_lanczos_center_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="MICV" />
+<meta property="og:url" content="http://localhost:1313/cass/" />
+<meta property="og:title" content="MICV" />
+<meta property="og:description" content="Distilling Spectral Graph for Object-Context Aware Open-Vocabulary Semantic Segmentation. A novel approach that enhances intra-object consistency by distilling spectral-driven features from vision foundation models into the attention mechanism of the visual encoder." /><meta property="og:image" content="http://localhost:1313/media/icon_huc20aa2f6f5c0a6f78f1951b0621355e5_26767_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+  <title>MICV</title>
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="eeeb8f60f540691edb50ec50a184a95a" >
+
+
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+
+  <div class="page-body">
+    
+
+    <article class="article">
+  
+<div class="article-container pt-3">
+  <h1></h1>
+
+<div class="article-metadata">
+
+</div>
+
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CASS</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <section class="hero teaser" style="position: relative;">
+    <div class="container is-max-desktop">
+      <!-- Title and Author Overlay -->
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; width: 100%; text-align: center;">
+        <h1 class="title is-2 publication-title" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); margin: 0 auto; max-width: 100%;">
+          Distilling Spectral Graph for Object-Context Aware Open-Vocabulary Semantic Segmentation
+        </h1>
+        
+        <!-- Authors -->
+        <div class="is-size-4 publication-authors" style="color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">
+          <span class="author-block">
+            Chanyoung Kim<sup>1</sup></span>&emsp;
+          <span class="author-block">
+            Dayun Ju<sup>1</sup></span>&emsp;
+          <span class="author-block">
+            Woojung Han<sup>1</sup></span>
+        </div>
+        <div class="is-size-4 publication-authors" style="color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">
+          <span class="author-block">
+            Ming-Hsuan Yang<sup>1,2</sup></span>&emsp;
+          <span class="author-block">
+            Seong Jae Hwang<sup>1</sup>
+          </span>
+        </div>
+        
+        <!-- Affiliations -->
+        <div class="is-size-4 publication-authors" style="color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7); margin-top: 1em;">
+          <span class="author-block">Yonsei University<sup>1</sup></span>&emsp;
+          <span class="author-block">University of California, Merced<sup>2</sup></span>
+        </div>
+      </div>
+
+      <!-- Image Grid -->
+      <div class="columns is-centered" style="opacity: 0.6; filter: brightness(0.5);">
+        <div class="column">
+          <div class="slider-container">
+            <div class="slider-wrapper">
+              <div id="image-slider" style="display: flex; width: 100%;">
+                <!-- First Row -->
+                <div class="slider-item">
+                  <div class="image-at-center">
+                    <img src="./static/images/pikachu.gif" alt="Pikachu" style="height: 300px; object-fit: contain;">
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="image-at-center">
+                    <img src="./static/images/mario.gif" alt="Mario" style="height: 300px; object-fit: contain;">
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="image-at-center">
+                    <img src="./static/images/thinker.gif" alt="Thinker" style="height: 300px; object-fit: contain;">
+                  </div>
+                </div>
+                <!-- Second Row -->
+                <div class="slider-item">
+                  <div class="image-at-center">
+                    <img src="./static/images/spaceneedle.gif" alt="Space Needle" style="height: 300px; object-fit: contain;">
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="image-at-center">
+                    <img src="./static/images/pyramid.gif" alt="Pyramid" style="height: 300px; object-fit: contain;">
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="image-at-center">
+                    <img src="./static/images/audi.gif" alt="Audi" style="height: 300px; object-fit: contain;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="hero">
+
+
+      <div class="column has-text-centered">
+        <div class="publication-links">
+          <!-- PDF Link. -->
+          <!-- <span class="link-block">
+            <a href=""
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>Paper</span>
+            </a>
+          </span> -->
+          <span class="link-block">
+            <a href=""
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+          </span>
+          <!-- Code Link. -->
+          <span class="link-block">
+            <a href=""
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fab fa-github"></i>
+              </span>
+              <span>Code (Coming Soon)</span>
+              </a>
+          </span>
+          
+        </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+      <div class="image-at-center">
+        <img src="./static/images/intro.png" alt="Teaser Image" width="100%">
+      </div>
+      <br>
+      <!-- <div class="columns is-centered">
+        <div class="column">
+          <div class="image-at-center">
+            <img src="./static/images/pikachu.gif" alt="Example GIF 1" style="height: 200px; object-fit: contain;">
+          </div>
+        </div>
+        <div class="column">
+          <div class="image-at-center">
+            <img src="./static/images/mario.gif" alt="Example GIF 2" style="height: 200px; object-fit: contain;">
+          </div>
+        </div>
+        <div class="column">
+          <div class="image-at-center">
+            <img src="./static/images/thinker.gif" alt="Example GIF 3" style="height: 200px; object-fit: contain;">
+          </div>
+        </div>
+      </div> -->
+      <!-- <br> -->
+      <!-- <div class="columns is-centered">
+        <div class="column">
+          <div class="image-at-center">
+            <img src="./static/images/spaceneedle.gif" alt="Example GIF 1" style="height: 300px; object-fit: contain;">
+          </div>
+        </div>
+        <div class="column">
+          <div class="image-at-center">
+            <img src="./static/images/pyramid.gif" alt="Example GIF 2" style="height: 300px; object-fit: contain;">
+          </div>
+        </div>
+        <div class="column">
+          <div class="image-at-center">
+            <img src="./static/images/audi.gif" alt="Example GIF 3" style="height: 300px; object-fit: contain;">
+          </div>
+        </div>
+      </div> -->
+      <!-- <br> -->
+      <h2 class="subtitle has-text-centered">
+        We introduce <b><i>CASS</i></b>,
+        <br>Distilling Spectral Graph for Object-<b>C</b>ontext <b>A</b>ware Open-Vocabulary <b>S</b>emantic <b>S</b>egmentation.
+      </h2>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          Open-Vocabulary Semantic Segmentation (OVSS) has advanced with recent vision-language models (VLMs), enabling segmentation beyond predefined categories through various learning schemes. Notably, training-free methods offer scalable, easily deployable solutions for handling unseen data, a key goal of OVSS. Yet, a critical issue persists: lack of object-level context consideration when segmenting complex objects in the challenging environment of OVSS based on arbitrary query prompts. This oversight limits models' ability to group semantically consistent elements within object and map them precisely to user-defined arbitrary classes. In this work, we introduce a novel approach that overcomes this limitation by incorporating object-level contextual knowledge within images. Specifically, our model enhances intra-object consistency by distilling spectral-driven features from vision foundation models into the attention mechanism of the visual encoder, enabling semantically coherent components to form a single object mask. Additionally, we refine the text embeddings with zero-shot object presence likelihood to ensure accurate alignment with the specific objects represented in the images. By leveraging object-level contextual knowledge, our proposed approach achieves state-of-the-art performance with strong generalizability across diverse datasets.
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Presentation Video</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jgLYk7-BpNU?si=gjS8gDOcbJ7JTMBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3 has-text-centered">Method</h3>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Overall Pipeline</h4>
+        <div class="content has-text-justified">
+          <img src="./static/images/overview.png" alt="Main figure">
+          <br>
+          <p>
+            We present CASS, object-level Context-Aware training-free open-vocabulary Semantic Segmentation model. 
+            Our method distills the vision foundation model's (VFM) object-level contextual spectral graph into CLIP’s attention and refines query text embeddings towards object-specific semantics.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Spectral Object-Level Context Distillation</h4>
+        <div class="content has-text-justified">
+          <img src="./static/images/local.png" alt="Main figure">
+          <p>
+            Detailed illustration of our proposed training-free spectral object-level context distillation mechanism. 
+    By matching the attention graphs of VFM and CLIP head-by-head to establish complementary relationships, and distilling the fundamental object-level context of the VFM graph to CLIP, we enhance CLIP’s ability to capture intra-object contextual coherence.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Object Presence-Driven Object-Level Context</h4>
+        <div class="content has-text-justified">
+          <img src="./static/images/OTA.png" alt="Main figure">
+          <p>
+            Detailed illustration of our object presence prior-guided text embedding adjustment module.
+   The CLIP text encoder generates text embeddings for each object class, and the object presence prior is derived from both visual and text embeddings. 
+   Within hierarchically defined class groups, text embeddings are selected based on object presence prior, then refined in an object-specific direction to align with components likely present in the image.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3 has-text-centered">Visualization</h3>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Effect of Spectral Object-Level Context Distillation</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/attention.png" alt="attention visualization" width="80%">
+          <p>
+            Attention score visualization for various query points. Left: Vanilla CLIP (\(A_{\text{CLIP}}\)) shows noisy, unfocused attention. Center: VFM-to-CLIP distillation without low-rank eigenscaling shows partial object grouping with limited detail. Right: Incorporating our low-rank eigenscaling captures object-level context, improving grouping within a single object.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3 has-text-centered">Qualitative Results</h3>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Datasets</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/qualitative.png" alt="qualitative comparison" width="100%">
+          <p>
+            Qualitative comparison across the Pascal VOC, Pascal Context, COCO, and ADE20K datasets using CLIP ViT-B/16.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Open-Vocabulary Semantic Segmentation in the Wild</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/wild.png" alt="qualitative comparison" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3 has-text-centered">Quantitative Results</h3>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">mIoU</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/miou.png" alt="quantitative comparison" width="100%">
+          <p>
+            Quantitative results with state-of-the-art unsupervised open-vocabulary semantic segmentation models on eight datasets.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">pAcc</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/pacc.png" alt="pacc comparison" width="100%">
+          <p>
+            Quantitative results using average pixel accuracy.
+          </p>
+        </div>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Scale-up Version (mIoU)</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/scaleup.png" alt="scale-up version" width="100%">
+          <p>
+            The scale-up version of CASS uses a larger CLIP encoder (ViT-L/14) to compute the object presence prior, rather than for feature extraction, enabling more accurate object classification. This configuration consistently outperforms CaR across all benchmarks, demonstrating the robustness and adaptability of CASS to variations in encoder capacity.
+          </p>
+        </div>
+
+        
+      </div>
+
+    </div>
+    
+  </div>
+
+</section>
+
+<section class="section"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3 has-text-centered">Application</h3>
+
+        <br>
+        <h4 class="title is-4 has-text-centered">Image Editing & Object Removal</h4>
+        <div class="content has-text-centered">
+          <img src="./static/images/application.png" alt="application" width="100%">
+          <p>
+            Visualization of image inpainting and object removal using our predicted mask. For image inpainting, we use "<code>red sports car with red wheels</code>" as an input prompt. Note that the mask refinement step is excluded when segmenting the object mask.
+            Our method generates an accurate and complete object mask directly from the prompt, enabling seamless inpainting and object removal. In contrast, the baseline produces incomplete masks, failing to capture essential components such as wheels and headlights, which negatively impacts the quality of the edited images.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>
+
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{kim2024cass,
+    author    = {Kim, Chanyoung and Ju, Dayun and Han, Woojung and Yang, Ming-Hsuan and Hwang, Seong Jae},
+    title     = {Distilling Spectral Graph for Object-Context Aware pen-Vocabulary Semantic Segmentation},
+    booktitle = {arXiv preprint arXiv:2411.1715},
+    year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./static/js/tag-height.js"></script>
+
+</body>
+</html>
+
+    </div>
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  <p class="powered-by">
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+<script src="/js/vendor-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.js" type="module"></script>
+      
+      <script>
+
+</script>
+
+</body>
+</html>
